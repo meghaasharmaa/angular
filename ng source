@@ -1,0 +1,24 @@
+
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+    <head> 
+        <title>ng-src Directive</title> 
+        <script src= 
+        "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"> 
+        </script> 
+  
+    </head> 
+    <body ng-app="app" style="text-align:center"> 
+      <h1 style="color:green">GeeksforGeeks</h1> 
+      <h2>ng-src Directive</h2> 
+        <div ng-controller="geek"> 
+            <img ng-src="{{pic}}" /><br><br><br> 
+        <script> 
+            var app = angular.module("app", []); 
+            app.controller('geek', ['$scope', function ($scope) { 
+                $scope.pic =  
+  "https://media.geeksforgeeks.org/wp-content/uploads/20190328034223/ngimg1.png"; 
+            }]); 
+        </script> 
+    </body> 
+</html> 
